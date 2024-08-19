@@ -15,6 +15,7 @@ export const performRequest = async ({
     '`Bearer ${process.env.NEXT_DATOCMS_API_TOKEN}`',
     `Bearer ${process.env.NEXT_DATOCMS_API_TOKEN}`
   )
+  console.log('process.env', process.env)
   const response = await fetch(API_DATOCMS_URL, {
     headers: {
       Authorization: `Bearer ${process.env.NEXT_DATOCMS_API_TOKEN}`,
