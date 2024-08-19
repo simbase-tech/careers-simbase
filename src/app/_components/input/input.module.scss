@@ -1,0 +1,8 @@
+.textField {
+  @apply flex gap-x-[4.5px] items-center;
+  &__icon {
+  }
+  &__input {
+    @apply bg-transparent border-none focus:outline-none w-full;
+  }
+}

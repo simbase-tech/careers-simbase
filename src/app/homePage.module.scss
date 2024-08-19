@@ -1,0 +1,20 @@
+.homePage {
+  @apply p-[20px] min-h-screen;
+  &__container {
+    @apply max-w-[650px] 2xl:max-w-[800px];
+  }
+  &__list {
+    @apply flex flex-col;
+  }
+  &__listItem {
+  }
+  &__listItemInput {
+  }
+  &__listItemValue {
+    color: #fff;
+  }
+  &__input {
+  }
+  &__terminalInput {
+  }
+}
