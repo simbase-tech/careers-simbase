@@ -11,15 +11,6 @@ export const performRequest = async ({
   variables = {},
   includeDrafts = false,
 }: IPerformRequestParams) => {
-  console.log(
-    '`Bearer ${process.env.NEXT_DATOCMS_API_TOKEN}`',
-    `Bearer ${process.env.NEXT_DATOCMS_API_TOKEN}`
-  )
-  console.log('process.env', process.env)
-  console.log(
-    'process.env.NEXT_PUBLIC_DATOCMS_API_TOKEN',
-    process.env.NEXT_PUBLIC_DATOCMS_API_TOKEN
-  )
   const response = await fetch(API_DATOCMS_URL, {
     headers: {
       Authorization: `Bearer ${process.env.NEXT_PUBLIC_DATOCMS_API_TOKEN}`,
